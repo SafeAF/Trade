@@ -113,7 +113,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_04_133530) do
     t.text "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "username", null: false
+    t.string "username"
     t.boolean "is_moderator", default: false
     t.boolean "is_administrator", default: false
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
